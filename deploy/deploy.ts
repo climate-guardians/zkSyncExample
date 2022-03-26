@@ -32,14 +32,14 @@ export default async function (hre: HardhatRuntimeEnvironment) {
 // If you already have the contract up
 
 //   const PackContract = new ethers.Contract( "0x7eF3B7Cb4118583E788AB3557702862b7A22D28d",packABI, connectedWallet);
-//   const HeroContract = new ethers.Contract( "0x7eF3B7Cb4118583E788AB3557702862b7A22D28d",heroABI, connectedWallet);
-//   const LandContract = new ethers.Contract( "0x7eF3B7Cb4118583E788AB3557702862b7A22D28d",landABI, connectedWallet);
-//   const PlantsContract = new ethers.Contract( "0x7eF3B7Cb4118583E788AB3557702862b7A22D28d",plantsABI, connectedWallet);
+//   const HeroContract = new ethers.Contract( "0xcc2B4C419bA70Aac48492322255E4bF58CEB5891",heroABI, connectedWallet);
+//   const LandContract = new ethers.Contract( "0x7603125ea92b15742e57436A056C7201288efb36",landABI, connectedWallet);
+//   const PlantsContract = new ethers.Contract( "0xe6966edab5987E18Fa798D49AF1D83A571CB9937",plantsABI, connectedWallet);
 
 // Only for deploying
 
-    const HeroContract = await deployer.deploy(heroArtifact, []);
-    console.log("HeroContract deployed under: ", HeroContract.address);
+    // const HeroContract = await deployer.deploy(heroArtifact, []);
+    // console.log("HeroContract deployed under: ", HeroContract.address);
     // const LandContract = await deployer.deploy(landArtifact, []);
     // console.log("LandContract deployed under: ", LandContract.address);
     // const PlantsContract = await deployer.deploy(plantsArtifact, []);
