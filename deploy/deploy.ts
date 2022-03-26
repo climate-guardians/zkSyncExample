@@ -38,8 +38,8 @@ export default async function (hre: HardhatRuntimeEnvironment) {
 
 // Only for deploying
 
-    // const HeroContract = await deployer.deploy(heroArtifact, []);
-    // console.log("HeroContract deployed under: ", HeroContract.address);
+    const HeroContract = await deployer.deploy(heroArtifact, []);
+    console.log("HeroContract deployed under: ", HeroContract.address);
     // const LandContract = await deployer.deploy(landArtifact, []);
     // console.log("LandContract deployed under: ", LandContract.address);
     // const PlantsContract = await deployer.deploy(plantsArtifact, []);
@@ -60,7 +60,7 @@ export default async function (hre: HardhatRuntimeEnvironment) {
 
 
 //NOT WORKING
-    const feesingas = await HeroContract.safeMint(wallet.address);
+    await HeroContract.safeMint(wallet.address);
     // const heroBalance = await HeroContract.balanceOf(wallet.address);
     // console.log(wallet.address, " has ", heroBalance, " Hero NFTs.");
     // await LandContract.safeMint(wallet.address);
